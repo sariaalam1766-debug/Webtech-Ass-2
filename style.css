@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eeeeee;
+}
+
+.hidden {
+  display: none;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e3a8a;
+  color: white;
+  padding: 10px 20px;
+}
+
+.top-bar h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+#message {
+  height: 20px;
+  margin: 8px 20px;
+  color: green;
+}
+
+button {
+  padding: 8px 14px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.main {
+  display: flex;
+  gap: 20px;
+  padding: 0 20px 20px 20px;
+}
+
+.box {
+  flex: 1;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.box h2 {
+  margin-top: 0;
+}
+
+#md-input {
+  width: 100%;
+  height: 400px;
+  font-family: monospace;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.slide {
+  height: 330px;
+  padding: 20px;
+  background-color: #1e293b;
+  color: white;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+.slide h1 {
+  color: yellow;
+}
+
+.slide h2 {
+  color: lightblue;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.slide-count {
+  text-align: center;
+  font-weight: bold;
+}
+
+#present-screen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #0f172a;
+  color: white;
+}
+
+#present-screen .slide {
+  flex: 1;
+  height: auto;
+  font-size: 28px;
+}
+
+#present-screen .slide h1 {
+  font-size: 50px;
+}
+
+#preview-pane:fullscreen {
+  display: flex;
+  flex-direction: column;
+  background-color: #0f172a;
+  color: white;
+}
+
+#preview-pane:fullscreen .slide {
+  flex: 1;
+  height: auto;
+  font-size: 28px;
+}
